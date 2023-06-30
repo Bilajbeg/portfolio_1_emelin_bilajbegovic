@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+header i {
+  color: white;
+}
+
+.main-top {
+  position: relative;
+  height: 350px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/07/31/16/24/banner-1559400_1280.jpg);
+}
+
+.top-text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 26px;
+  font-weight: bold;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navbar-icon {
+  margin-right: 30px;
+  color: white;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  margin: 50px;
+}
+.container .containerheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .containerheader button {
+  margin-left: 10px;
+  padding: 5px;
+}
+.container img {
+  padding: 20px;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .card-header {
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card-header .right .fa-regular {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: black;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+}
+footer .socialmedia .fa-brands {
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+footer .socialmedia a {
+  color: white;
+  margin: 5px;
+}
+footer .socialmedia a:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+footer .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+footer .newsletter label {
+  margin-right: 20px;
+}
+footer .newsletter button {
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+}
+footer .newsletter button:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+footer .author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  font-size: 15px;
+}
+footer .author p {
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

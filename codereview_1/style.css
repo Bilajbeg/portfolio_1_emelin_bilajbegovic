@@ -1,0 +1,255 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+#p1 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -180px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.header_1 #font_1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px gray;
+}
+.header_1 #font_1:hover {
+  color: coral;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.div_1 {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px gray;
+}
+.div_1 a:hover {
+  color: coral;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.header_2 {
+  height: 36px;
+  background-color: lightgray;
+}
+.header_2 .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header_2 .navbar a {
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 5px 5px 5px gray;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.header_2 .navbar a:hover {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+
+.container img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.container div {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+  background-color: lightgray;
+  /* Special words I wanted to highlight so I take span to handle it */
+}
+.container div span {
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+.container div span:hover {
+  color: yellow;
+  font-size: 26px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.footer {
+  padding-top: 15px;
+  background-color: black;
+  height: 150px;
+}
+.footer .footerdiv_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 3px;
+}
+.footer .footerdiv_1 a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+.footerdiv_2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+.footerdiv_2 img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.copyrights {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Here starts the scss for the about page */
+.container_about {
+  font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.container_about .div_1_about {
+  border: 2 solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px gray;
+  width: 550px;
+  height: 350px;
+  margin-left: 100px;
+  background-color: darkkhaki;
+  padding-top: 10px;
+}
+.container_about .div_1_about:hover {
+  color: white;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px black;
+}
+.container_about .div_2_about {
+  border: 2 solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px gray;
+  width: 550px;
+  height: 350px;
+  margin-left: 400px;
+  background-color: darkkhaki;
+  padding-top: 10px;
+}
+.container_about .div_2_about:hover {
+  color: white;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px black;
+}
+.container_about .div_3_about {
+  border: 2 solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px gray;
+  width: 550px;
+  height: 350px;
+  margin-left: 800px;
+  background-color: darkkhaki;
+  padding-top: 10px;
+}
+.container_about .div_3_about:hover {
+  color: white;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px black;
+}
+
+#navbar_about {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+a {
+  color: black;
+}
+
+/* Here I added the @media scree to put the images into 2 rows for tablets and 1 row for mobile phones 
+when the resolution gets smaller ! */
+@media screen and (width < 1150px) {
+  .container {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header_1 {
+    height: auto;
+  }
+  .header_2 {
+    height: auto;
+  }
+  .container_about .div_1_about {
+    margin-left: 0;
+  }
+  .container_about .div_1_about:hover {
+    font-size: 23px;
+  }
+  .container_about .div_2_about {
+    margin-left: 0;
+  }
+  .container_about .div_3_about {
+    margin-left: 0;
+  }
+}
+@media screen and (width < 650px) {
+  .container {
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header_1 {
+    height: auto;
+  }
+  .header_2 {
+    height: auto;
+  }
+  .container_about .div_1_about {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+  .container_about .div_1_about:hover {
+    font-size: 23px;
+  }
+  .container_about .div_2_about {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+  .container_about .div_3_about {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

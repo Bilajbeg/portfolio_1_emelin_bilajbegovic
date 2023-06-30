@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="css/style.css" />
+	<title>My Weekly Planner</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<img class="nav-icon mx-3" src="img/icons8-list-24.png" alt="list_icon"> 
+				<a class="navbar-brand" href="#">My Planner</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+					aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> <span
+						class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarText">
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#weeklytasks">Tasks</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#socialmedia">Settings</a>
+						</li>
+					</ul>
+					<span class="navbar-icon">
+						<i class="fa-solid fa-bell"></i>
+					</span>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="main-top" id="main-top">
+			<div class="top-img"></div>
+			<div class="top-text">Weekly planner</div>
+		</div>
+
+		<div class="container mx-auto" id="weeklytasks">
+			<div class="containerheader">
+				<h5>Weekly Tasks</h5>
+				<p>Sort by priority:
+					<button id="sort-buttonup" type="button">
+						<i class="fa-solid fa-arrow-up-wide-short"></i>
+					</button>
+					<button id="sort-buttondown" type="button">
+						<i class="fa-solid fa-arrow-down-wide-short"></i>
+					</button>
+				</p>
+			</div>
+
+			<!-- Specifying how man rows and colums should be displayed when changing the resolution -->
+			<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 g-3" id="result">
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<div class="socialmedia" id="socialmedia">
+			<a href="#facebook"><i class="fa-brands fa-border fa-square-facebook"></i></a>
+			<a href="#twitter"><i class="fa-brands fa-border fa-twitter"></i></a>
+			<a href="#google"><i class="fa-brands fa-border fa-google"></i></a>
+			<a href="#instagram"><i class="fa-brands fa-border fa-instagram"></i></a>
+			<a href="#linkedin"><i class="fa-brands fa-border fa-linkedin-in"></i></a>
+			<a href="#github"><i class="fa-brands fa-border fa-github"></i></a>
+		</div>
+
+		<div class="newsletter">
+			<form>
+				<label for="fname">Sign up for our newsletter</label>
+				<input type="text" id="fname" name="fname" />
+			</form>
+			<button type="button">Subscribe</button>
+		</div>
+
+		<div class="author">
+			<p>&copy; 2023 copyright: Emelin Bilajbegovic</p>
+		</div>
+	</footer>
+
+	<!-- Links for javascript -->
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+		</script>
+
+</body>
+
+</html>
