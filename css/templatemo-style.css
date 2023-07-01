@@ -669,17 +669,18 @@ section {
 }
 
 .google-map {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 270px;
   overflow: hidden;
   margin: 0 auto;
 }
 
 .google-map iframe {
   border: 0;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 270px;
 }
 
 #contact .form-control {
@@ -1060,7 +1061,7 @@ footer span,
   }
 
   .google-map {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   footer {
