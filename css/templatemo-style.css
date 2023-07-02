@@ -676,9 +676,9 @@ section {
 }
 
 .google-map {
-  border-radius: 10%;
+  border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  width: 400px;
+  width: 450px;
   height: 270px;
   overflow: hidden;
   margin: 0 auto;
@@ -686,7 +686,7 @@ section {
 
 .google-map iframe {
   border: 0;
-  width: 400px;
+  width: 450px;
   height: 270px;
 }
 
