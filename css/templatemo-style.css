@@ -683,7 +683,7 @@ section {
 .google-map {
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  width: 450px;
+  width: 100%;
   height: 270px;
   overflow: hidden;
   margin: 0 auto;
@@ -691,8 +691,15 @@ section {
 
 .google-map iframe {
   border: 0;
-  width: 450px;
+  width: 100%;
   height: 270px;
+}
+
+@media screen and (max-width: 767px) {
+  .google-map {
+    height: 200px;
+    /* Adjust the height for smaller screens */
+  }
 }
 
 #contact .form-control {
